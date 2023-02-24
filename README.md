@@ -1,0 +1,17 @@
+# ADE Community entity import queries
+This repository contains example solutions for querying different source databases and importing the resulting CSV:s of those queries to Agile Data Engine. 
+For more information, please refer to the official documentation: https://ade.document360.io/docs/entity-import
+
+**The repository is provided as community solution and it may require modifications to fit your use case. Note that this solution is not part of the Agile Data Engine product. Please use at your own caution.**
+
+Contents:
+- Queries for different database products
+  - Microsoft SQL Server / Azure SQL Database
+  - Snowflake
+  - Oracle
+
+## Usage
+1) Execute query in source database
+2) Export the resultset in CSV format
+3) Import the CSV file to Agile Data Engine
+4) Check the results from resulted package(s)
