@@ -10,7 +10,7 @@ Contents:
 ## Purpose
 This solution helps to import entity metadata, so you can have correct schema created by ADE. After importing entity metadata, you can load your source files correctly to target database.
 
-For more information, please refer to the official documentation: https://ade.document360.io/docs/entity-import
+For more information, please refer to the official documentation: https://docs.agiledataengine.com/docs/import-entities
 
 
 ## Usage
