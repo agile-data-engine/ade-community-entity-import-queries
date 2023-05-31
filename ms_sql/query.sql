@@ -1,4 +1,4 @@
-/* See possible values from the documentation: https://ade.document360.io/docs/entity-import#columns */
+/* See possible values from the documentation: https://docs.agiledataengine.com/docs/import-entities#Importentities-Columns */
 
 DECLARE @database_dbms_product VARCHAR(20) = 'MS_SQL';
 DECLARE @package_name VARCHAR(20) = 'PACKAGE_NAME';
