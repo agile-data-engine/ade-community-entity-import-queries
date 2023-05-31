@@ -1,4 +1,4 @@
-/* See possible values from the documentation: https://ade.document360.io/docs/entity-import#columns */
+/* See possible values from the documentation: https://docs.agiledataengine.com/docs/import-entities#Importentities-Columns */
 
 set database_dbms_product = 'SNOWFLAKE';
 set package_name = 'PACKAGE_NAME';
