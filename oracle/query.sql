@@ -1,4 +1,4 @@
-/* See possible values from the documentation: https://ade.document360.io/docs/entity-import#columns */
+/* See possible values from the documentation: https://docs.agiledataengine.com/docs/import-entities#Importentities-Columns */
 
 /* Using ADE data types directly when using Oracle */
 DEFINE database_dbms_product = 'AGILE_DATA_ENGINE';
