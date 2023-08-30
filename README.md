@@ -6,6 +6,7 @@ Contents:
   - Microsoft SQL Server / Azure SQL Database
   - Snowflake
   - Oracle
+  - BigQuery
 
 ## Purpose
 This solution helps to import entity metadata, so you can have correct schema created by ADE. After importing entity metadata, you can load your source files correctly to target database.
