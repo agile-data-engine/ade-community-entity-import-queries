@@ -30,8 +30,13 @@ select
         when c.data_type like 'STRING(%'
             then 
                 split(split(c.data_type, '(')[SAFE_OFFSET(1)], ')')[SAFE_OFFSET(0)]
+        when c.data_type like 'BYTES(%'
+            then 
+                split(split(c.data_type, '(')[SAFE_OFFSET(1)], ')')[SAFE_OFFSET(0)]
         /* If length not given, setting default length, because it is required in ADE */
         when c.data_type = 'STRING' then '255'
+        /* If length not given, setting default length, because it is required in ADE */
+        when c.data_type = 'BYTES' then '16'
         else null end
     as attribute_length,
     case
