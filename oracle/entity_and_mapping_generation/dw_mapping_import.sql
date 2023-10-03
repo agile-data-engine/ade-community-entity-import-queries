@@ -106,7 +106,7 @@ combined as (
 )
 SELECT DISTINCT
     '&source_entity_schema' AS "source_entity_schema",
-    'STG_' ||  t.entity_name AS "source_entity_name",
+    'STG_' || '&entity_source_system' || '_' || t.entity_name AS "source_entity_name",
     '&target_entity_schema' as "target_entity_schema",
     'DW_' || '&entity_source_system' || '_' || t.entity_name AS "target_entity_name",
     'load_dw_' || lower('&entity_source_system') || '_' || lower(t.entity_name) || '_from_stg_' || lower('&entity_source_system') || '_' ||  lower(t.entity_name) AS "target_entity_load_name",

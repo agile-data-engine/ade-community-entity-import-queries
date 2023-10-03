@@ -19,7 +19,7 @@ DEFINE entity_source_system = 'ORCL';
 
 WITH attributes as (
     SELECT DISTINCT
-        'DW_' || '&entity_source_system' || '_' || t.table_name AS entity_name,
+        '&entity_source_system' || '_' || t.table_name AS entity_name,
         t.column_name AS attribute_name,
         UPPER(
             CASE
@@ -141,7 +141,7 @@ meta_attributes as (
     FROM DUAL
     UNION ALL
     SELECT
-        'meta_update_time' AS "attribute_name",
+        'meta_load_name' AS "attribute_name",
         'VARCHAR' as "attribute_datatype",
         100 as "attribute_length",
         null as "attribute_precision",
