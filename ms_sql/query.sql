@@ -34,6 +34,7 @@ SELECT
             WHEN c.data_type IN ('datetime', 'datetime2') THEN 'TIMESTAMP'
             WHEN c.data_type IN ('text', 'uniqueidentifier', 'uuid', 'varbinary', 'xml', 'nvarchar', 'hierarchyid') THEN 'VARCHAR'
             WHEN c.data_type IN ('nchar', 'char') THEN 'CHAR'
+            WHEN c.data_type = 'NTEXT' THEN 'VARCHAR'
             ELSE c.data_type
         END
       ) AS "attribute_datatype", 
