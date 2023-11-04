@@ -32,9 +32,8 @@ SELECT
             WHEN c.data_type IN ('int4', 'smallint', 'smallserial') THEN 'INT'
             WHEN c.data_type IN ('bigint', 'bigserial', 'int', 'int8', 'integer', 'serial') THEN 'BIGINT'
             WHEN c.data_type IN ('datetime', 'datetime2') THEN 'TIMESTAMP'
-            WHEN c.data_type IN ('text', 'uniqueidentifier', 'uuid', 'varbinary', 'xml', 'nvarchar', 'hierarchyid') THEN 'VARCHAR'
+            WHEN c.data_type IN ('text', 'uniqueidentifier', 'uuid', 'varbinary', 'xml', 'nvarchar', 'hierarchyid', 'NTEXT' ) THEN 'VARCHAR'
             WHEN c.data_type IN ('nchar', 'char') THEN 'CHAR'
-            WHEN c.data_type = 'NTEXT' THEN 'VARCHAR'
             ELSE c.data_type
         END
       ) AS "attribute_datatype", 
